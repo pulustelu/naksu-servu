@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     oliviabot.url = "github:RocketRace/oliviabot";
     oliviabot.inputs.nixpkgs.follows = "nixpkgs";
@@ -12,8 +12,7 @@
     nixos-hardware,
     ...
   }:
-  let state-version = "24.11";
-  in {
+  {
     nixosConfigurations."caique" = nixpkgs.lib.nixosSystem {
       system = "x86_84-linux";
       modules = [
