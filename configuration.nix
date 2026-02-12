@@ -62,7 +62,7 @@
   };
   
   # So I can keep the lid closed
-  services.logind.lidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
 
   # Configure nix & nixpkgs
   nixpkgs.config.allowUnfree = true;
