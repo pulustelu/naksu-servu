@@ -70,7 +70,7 @@
     settings = {
       MusicFolder = "/home/olivia/music"
     };
-  }
+  };
 
   # Configure nix & nixpkgs
   nixpkgs.config.allowUnfree = true;
