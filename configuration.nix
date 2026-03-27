@@ -68,7 +68,7 @@
   services.navidrome = {
     enable = true;
     settings = {
-      MusicFolder = "/home/olivia/music"
+      MusicFolder = "/home/olivia/music";
     };
   };
 
