@@ -64,6 +64,14 @@
   # So I can keep the lid closed
   services.logind.settings.Login.HandleLidSwitch = "ignore";
 
+  # Navidrome
+  services.navidrome = {
+    enable = true;
+    settings = {
+      MusicFolder = "/home/olivia/music"
+    };
+  }
+
   # Configure nix & nixpkgs
   nixpkgs.config.allowUnfree = true;
   nix = {
