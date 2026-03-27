@@ -67,6 +67,7 @@
   # Navidrome
   services.navidrome = {
     enable = true;
+    openFirewall = true;
     settings = {
       MusicFolder = "/home/olivia/music";
     };
